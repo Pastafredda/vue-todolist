@@ -22,5 +22,10 @@ createApp({
                 },
             ]
         }
+    },
+    methods:{
+        rimuovi(indice){
+            this.items.splice(indice, 1)
+        }
     }
 }).mount('#app');

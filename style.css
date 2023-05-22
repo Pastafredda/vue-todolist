@@ -61,5 +61,10 @@ header{
 
 .task .fa-x{
     float: right;
+    cursor: pointer;
+}
+
+.sbarrato{
+    text-decoration: line-through;
 }
 
