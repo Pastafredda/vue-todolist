@@ -21,7 +21,6 @@ createApp({
                     text:"Svolgi l'esercizio senza chiedere ai Massimi",
                     done: false
                 },
-                
             ],
         }
     },
@@ -33,9 +32,11 @@ createApp({
             this.items.unshift({text:this.items.text})
             this.items.text="";
         },
-        changeDone(){
-            if(this.done === false){
-                this.done = true
+        changeDone(indice){
+            if(!this.items[indice].done){
+                this.items[indice].done = true;
+            }else{
+                this.items[indice].done = false;
             }
         }
     }

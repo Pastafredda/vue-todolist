@@ -21,8 +21,8 @@
 
             <div class="task-container">
                 <ul>
-                    <li @click="changeDone(index)" class="task" :class="task.done ? 'sbarrato' : '' "  v-for="(task,index,) in items" >
-                        {{task.text}}<i class="fa-solid fa-x" @click="rimuovi(index)"></i>
+                    <li @click.stop="changeDone(index)" class="task" :class="task.done ? 'sbarrato' : '' "  v-for="(task,index,) in items" >
+                        {{task.text}}<i class="fa-solid fa-x" @click.stop="rimuovi(index)"></i>
                     </li>
                 </ul>
             </div>
